@@ -76,7 +76,7 @@ and it was pre-divided into a `training set of 149 images` and a `testing set of
   ```bash
   # in your virtual environment
   pip install dvc-gdrive
-  dvc get https://github.com/psaboia/FUNSD datasets/FUNSD
+  dvc get https://github.com/crcresearch/FUNSD datasets/FUNSD
   ```
   Note: After the last command, a window will open to authenticate with your Google account. Once you do it, you can close the window and return to the terminal.
 
