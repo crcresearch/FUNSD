@@ -1,0 +1,5 @@
+[core]
+    remote = funsd-gdrive
+['remote "funsd-gdrive"']
+    url = gdrive://17sNyGIfhcmBXw5b4-bqh1juAjWbKL6lN/dvcstore
+    gdrive_acknowledge_abuse = true
