@@ -1,0 +1,31 @@
+[project]
+name = "FUNSD"
+version = "0.1.0"
+description = "This code is part of the Trusted AI Project"
+authors = [
+        { name = "Priscila Saboia Moreira", email = "pmoreira@nd.edu" },
+        { name = "Chris Sweet", email = "csweet1@nd.edu" },
+        { name = "Charles Vardeman II", email = "cvardema@nd.edu" },
+]
+dependencies = [
+    "langchain>=0.2.1",
+    "langchain-openai>=0.1.7",
+    "ipykernel>=6.29.4",
+    "python-dotenv>=1.0.1",
+    "pandas>=2.2.2",
+    "matplotlib>=3.9.0",
+    "scikit-learn>=1.5.0",
+    "konfuzio-sdk>=0.2.15",
+    "datasets>=2.19.2",
+    "jupyter>=1.0.0",
+    "opencv-python>=4.10.0.82",
+    "azure-ai-formrecognizer>=3.3.3",
+    "dvc-gdrive>=3.0.1",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
