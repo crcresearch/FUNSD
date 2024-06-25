@@ -4,7 +4,7 @@ The FUNSD_SupplyChain training set is a specialized subset of the original FUNSD
 to focus on the supply chain domain. We selectively filter documents from the original FUNSD dataset to ensure 
 that the documents included in the FUNSD_SupplyChain training set are relevant to supply chain applications.
 
-The FUNSD_SupplyChain Training Set comprises 24 documents selected from the 119 documents in the original set. 
+The FUNSD_SupplyChain Training Set comprises 24 documents selected from the 149 documents in the original set. 
 This subset includes 19 distinct categories, the distribution of which is detailed in the table below.
 
 | #  | Document Type                      | Document                                     |
