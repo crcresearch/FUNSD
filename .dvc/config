@@ -1,5 +1,8 @@
 [core]
-    remote = funsd-gdrive
+    remote = vast
 ['remote "funsd-gdrive"']
     url = gdrive://17sNyGIfhcmBXw5b4-bqh1juAjWbKL6lN/dvcstore
     gdrive_acknowledge_abuse = true
+['remote "vast"']
+    url = ssh://crcfe01.crc.nd.edu://project01/la3d/datasets/dvc-remote/funsd
+    ask_password = true

@@ -21,6 +21,7 @@ dependencies = [
     "opencv-python>=4.10.0.82",
     "azure-ai-formrecognizer>=3.3.3",
     "dvc-gdrive>=3.0.1",
+    "dvc[ssh]>=3.54.1",
 ]
 requires-python = "==3.10.*"
 readme = "README.md"
