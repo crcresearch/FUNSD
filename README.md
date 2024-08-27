@@ -75,11 +75,11 @@ and it was pre-divided into a `training set of 149 images` and a `testing set of
   You also can use `git` with `dvc` to download the dataset containing the Azure annotations.:
   ```bash
   # in your virtual environment
-  pip install dvc-gdrive
+  pip install dvc[ssh]
   dvc get https://github.com/crcresearch/FUNSD datasets/FUNSD
   ```
-  Note: After the last command, a window will open to authenticate with your Google account. Once you do it, you can close the window and return to the terminal.
-
+  **Note:** After running the last command, you may be prompted to enter your password to SSH into the CRC Cluster.
+  
 - You can also download it from the following link: https://www.crc.nd.edu/~pmoreira/funsd.zip
 
 - To plot the annotations on the image, you can use the following notebook: [FUNSD notebook Instructions](nbs/funsd.ipynb)
@@ -97,6 +97,15 @@ Vu et al. (2020) in [2] reported several inconsistencies in labeling, which coul
 The [FUNSD+](https://konfuzio.com/de/funsd-plus/) dataset is an enhanced version of the original [FUNSD (Form Understanding in Noisy Scanned Documents)](https://arxiv.org/pdf/1905.13538) dataset, designed for more comprehensive document understanding tasks.
 
 - [FUNSD+ notebook Instructions](nbs/funsd_plus.ipynb)
+
+- Get the Dataset via DVC
+  
+  ```bash
+  # in your virtual environment
+  pip install dvc[ssh]
+  dvc get https://github.com/crcresearch/FUNSD datasets/FUNSD_plus
+  ```
+ **Note:** After running the last command, you may be prompted to enter your password to SSH into the CRC Cluster.
 
 # <a id='toc2_'></a>[References](#toc0_)
 
