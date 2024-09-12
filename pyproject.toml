@@ -15,7 +15,6 @@ dependencies = [
     "pandas>=2.2.2",
     "matplotlib>=3.9.0",
     "scikit-learn>=1.5.0",
-    "konfuzio-sdk>=0.2.15",
     "datasets>=2.19.2",
     "jupyter>=1.0.0",
     "opencv-python>=4.10.0.82",
