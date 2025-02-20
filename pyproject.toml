@@ -25,6 +25,8 @@ dependencies = [
     "google-auth>=2.35.0",
     "google-auth-oauthlib>=1.2.1",
     "google-auth-httplib2>=0.2.0",
+    "azure-ai-documentintelligence==1.0.0b4",
+    "jq>=1.8.0",
 ]
 requires-python = "==3.10.*"
 readme = "README.md"
