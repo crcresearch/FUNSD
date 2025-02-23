@@ -27,6 +27,12 @@ dependencies = [
     "google-auth-httplib2>=0.2.0",
     "azure-ai-documentintelligence==1.0.0b4",
     "jq>=1.8.0",
+    "torch==2.2.1",
+    "torchvision==0.17.1",
+    "sentence-transformers>=3.4.1",
+    "cosette>=0.0.4",
+    "toolslm==0.1.0",
+    "openai==1.62.0",
 ]
 requires-python = "==3.10.*"
 readme = "README.md"
