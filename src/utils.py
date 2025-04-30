@@ -5,6 +5,7 @@ from typing import List
 import azure.ai.formrecognizer
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.formrecognizer import DocumentAnalysisClient
+from azure.ai.documentintelligence import DocumentIntelligenceClient
 import matplotlib.pyplot as plt
 from PIL import Image
 import matplotlib.patches as patches
@@ -103,6 +104,9 @@ def create_dataframe_from_key_value_pairs(key_value_pairs: List[azure.ai.formrec
     
 def initialize_client(endpoint, key):
     return DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
+
+def initialize_document_intelligence_client(endpoint, key):
+    return DocumentIntelligenceClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
 def format_bounding_box(bounding_box):
     if not bounding_box:
