@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:63cb3a8d362b23f9586a569ca26b761d40c654c016311e3a8593ccea7771858a"
+content_hash = "sha256:b624638d73072c7d423c85beab0ed2d7e9b6631f600ea8d4197c8072d11b1f52"
 
 [[package]]
 name = "aiohttp"
@@ -297,7 +297,7 @@ files = [
 
 [[package]]
 name = "azure-ai-documentintelligence"
-version = "1.0.0b4"
+version = "1.0.2"
 requires_python = ">=3.8"
 summary = "Microsoft Azure AI Document Intelligence Client Library for Python"
 groups = ["default"]
@@ -307,8 +307,8 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_ai_documentintelligence-1.0.0b4-py3-none-any.whl", hash = "sha256:c3a90560b4029e232dbab1334ac2f3dda4cae7c1f60dad277fe21a876dd6bb9f"},
-    {file = "azure_ai_documentintelligence-1.0.0b4.tar.gz", hash = "sha256:1aa36f0617b0c129fdc82b039b7084fd5b69af08e8e0cb500108b9f6efd61b36"},
+    {file = "azure_ai_documentintelligence-1.0.2-py3-none-any.whl", hash = "sha256:e1fb446abbdeccc9759d897898a0fe13141ed29f9ad11fc705f951925822ed59"},
+    {file = "azure_ai_documentintelligence-1.0.2.tar.gz", hash = "sha256:4d75a2513f2839365ebabc0e0e1772f5601b3a8c9a71e75da12440da13b63484"},
 ]
 
 [[package]]
