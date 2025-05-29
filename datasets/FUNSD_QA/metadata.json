@@ -1,0 +1,15 @@
+{
+  "name": "FUNSD_QA",
+  "version": "1.0.0",
+  "description": "Question-answer pairs derived from FUNSD dataset with Claude 3.7 Sonnet markdown annotations",
+  "funsd_version": "original",
+  "creation_date": "2023-06-15",
+  "stats": {
+    "total_documents": 100,
+    "total_qa_pairs": 0,
+    "training_documents": 50,
+    "training_qa_pairs": 0,
+    "testing_documents": 50,
+    "testing_qa_pairs": 0
+  }
+} 

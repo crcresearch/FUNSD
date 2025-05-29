@@ -1,0 +1,277 @@
+[
+  {
+    "id": "qa_extraction_001",
+    "reference_question": "What is the total amount of the invoice?",
+    "user_question": "What is the total amount of the invoice from East Coast Supply Co.?",
+    "answer": "$12,457.89",
+    "type": "extraction",
+    "difficulty": "easy",
+    "supporting_documents": ["0000990274"],
+    "section": "Invoice Total",
+    "context": "Total Amount: $12,457.89",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_extraction_002",
+    "reference_question": "Who is the invoice addressed to?",
+    "user_question": "Who is the recipient of the East Coast Supply Co. invoice dated March 15, 1995?",
+    "answer": "Westfield Manufacturing, Inc.",
+    "type": "extraction",
+    "difficulty": "easy",
+    "supporting_documents": ["0000990274"],
+    "section": "Invoice Header",
+    "context": "Bill To: Westfield Manufacturing, Inc.\n123 Industrial Parkway\nCleveland, OH 44115",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_numerical_001",
+    "reference_question": "What is the subtotal before tax?",
+    "user_question": "What is the subtotal before tax on the East Coast Supply Co. invoice?",
+    "answer": "$11,598.96",
+    "type": "numerical_reasoning",
+    "difficulty": "easy",
+    "supporting_documents": ["0000990274"],
+    "section": "Invoice Summary",
+    "context": "Subtotal: $11,598.96\nTax (7.25%): $858.93\nTotal Amount: $12,457.89",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_numerical_002",
+    "reference_question": "What percentage of the total invoice is attributed to 'Industrial Bearings'?",
+    "user_question": "On the East Coast Supply Co. invoice from March 1995, what percentage of the total invoice amount is attributed to 'Industrial Bearings'?",
+    "answer": "32.11%",
+    "type": "numerical_reasoning",
+    "difficulty": "medium",
+    "supporting_documents": ["0000990274"],
+    "supporting_sections": [
+      {"document_id": "0000990274", "section": "Invoice Items"},
+      {"document_id": "0000990274", "section": "Invoice Summary"}
+    ],
+    "reasoning_path": [
+      "Locate the line item for Industrial Bearings ($4,000)",
+      "Identify the total invoice amount ($12,457.89)",
+      "Calculate the percentage: (4000/12457.89) × 100 = 32.11%"
+    ],
+    "section": "Invoice Items",
+    "context": "Industrial Bearings (100 units) - $40.00 ea - $4,000.00\n...\nTotal Amount: $12,457.89",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_temporal_001",
+    "reference_question": "When is the payment due?",
+    "user_question": "When is the payment due for the East Coast Supply Co. invoice?",
+    "answer": "April 15, 1995",
+    "type": "temporal_reasoning",
+    "difficulty": "easy",
+    "supporting_documents": ["0000990274"],
+    "section": "Payment Terms",
+    "context": "Terms: Net 30 days\nInvoice Date: March 15, 1995\nDue Date: April 15, 1995",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_temporal_002",
+    "reference_question": "How many days overdue would the payment be if paid on April 30, 1995?",
+    "user_question": "If Westfield Manufacturing pays the East Coast Supply Co. invoice on April 30, 1995, how many days overdue would the payment be?",
+    "answer": "15 days",
+    "type": "temporal_reasoning",
+    "difficulty": "medium",
+    "supporting_documents": ["0000990274"],
+    "supporting_sections": [
+      {"document_id": "0000990274", "section": "Payment Terms"}
+    ],
+    "reasoning_path": [
+      "Identify the due date (April 15, 1995)",
+      "Calculate the difference between April 30 and April 15",
+      "Determine that the payment would be 15 days overdue"
+    ],
+    "section": "Payment Terms",
+    "context": "Due Date: April 15, 1995",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_verification_001",
+    "reference_question": "Is there a discount for early payment?",
+    "user_question": "Does the East Coast Supply Co. invoice offer a discount for early payment?",
+    "answer": "Yes, 2% discount if paid within 10 days",
+    "type": "verification",
+    "difficulty": "medium",
+    "supporting_documents": ["0000990274"],
+    "section": "Payment Terms",
+    "context": "Terms: Net 30 days\nEarly Payment Discount: 2% if paid within 10 days",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_hop_001",
+    "reference_question": "What would be the total amount if the early payment discount is applied?",
+    "user_question": "If Westfield Manufacturing takes advantage of the early payment discount on the East Coast Supply Co. invoice, what would be the total amount to pay?",
+    "answer": "$12,208.73",
+    "type": "multi_hop_reasoning",
+    "difficulty": "hard",
+    "supporting_documents": ["0000990274"],
+    "supporting_sections": [
+      {"document_id": "0000990274", "section": "Invoice Summary"},
+      {"document_id": "0000990274", "section": "Payment Terms"}
+    ],
+    "reasoning_path": [
+      "Identify the total invoice amount ($12,457.89)",
+      "Identify the early payment discount (2%)",
+      "Calculate the discount amount ($12,457.89 × 0.02 = $249.16)",
+      "Subtract the discount from the total ($12,457.89 - $249.16 = $12,208.73)"
+    ],
+    "section": "Payment Terms",
+    "context": "Total Amount: $12,457.89\nEarly Payment Discount: 2% if paid within 10 days",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_comparative_001",
+    "reference_question": "Which line item has the highest unit price?",
+    "user_question": "On the East Coast Supply Co. invoice, which line item has the highest unit price?",
+    "answer": "Hydraulic Pumps",
+    "type": "comparative_reasoning",
+    "difficulty": "medium",
+    "supporting_documents": ["0000990274"],
+    "section": "Invoice Items",
+    "reasoning_path": [
+      "Examine each line item's unit price",
+      "Industrial Bearings: $40.00 per unit",
+      "Hydraulic Pumps: $95.50 per unit",
+      "Steel Fasteners: $2.75 per unit",
+      "Control Valves: $57.25 per unit",
+      "Compare all unit prices",
+      "Identify Hydraulic Pumps as having the highest unit price at $95.50"
+    ],
+    "context": "Industrial Bearings (100 units) - $40.00 ea - $4,000.00\nHydraulic Pumps (20 units) - $95.50 ea - $1,910.00\nSteel Fasteners (2,500 units) - $2.75 ea - $6,875.00\nControl Valves (15 units) - $57.25 ea - $858.75",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_counterfactual_001",
+    "reference_question": "If the tax rate were 6% instead of 7.25%, what would the total invoice amount be?",
+    "user_question": "If the tax rate on the East Coast Supply Co. invoice were 6% instead of 7.25%, what would the total invoice amount be?",
+    "answer": "$12,294.90",
+    "type": "counterfactual_reasoning",
+    "difficulty": "hard",
+    "supporting_documents": ["0000990274"],
+    "reasoning_path": [
+      "Identify the subtotal ($11,598.96)",
+      "Calculate 6% tax on the subtotal ($11,598.96 × 0.06 = $695.94)",
+      "Add the new tax amount to the subtotal ($11,598.96 + $695.94 = $12,294.90)"
+    ],
+    "section": "Invoice Summary",
+    "context": "Subtotal: $11,598.96\nTax (7.25%): $858.93\nTotal Amount: $12,457.89",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_visual_001",
+    "reference_question": "Is the company logo positioned at the top right or top left of the invoice?",
+    "user_question": "On the East Coast Supply Co. invoice, is the company logo positioned at the top right or top left of the document?",
+    "answer": "Top left",
+    "type": "visual_reasoning",
+    "difficulty": "easy",
+    "supporting_documents": ["0000990274"],
+    "section": "Document Layout",
+    "context": "The East Coast Supply Co. logo appears in the top left corner of the document header, adjacent to the company name and address.",
+    "requires_reasoning": false,
+    "requires_image": true,
+    "visual_elements": ["logo", "document header", "layout positioning"],
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_doc_001",
+    "reference_question": "Is this invoice consistent with the purchase order from document 0011856542?",
+    "user_question": "Is the East Coast Supply Co. invoice consistent with the purchase order from Westfield Manufacturing (document 0011856542)?",
+    "answer": "No, there's a discrepancy in the quantity of Steel Fasteners ordered (2,000 in the PO vs. 2,500 billed in the invoice)",
+    "type": "verification",
+    "difficulty": "hard",
+    "supporting_documents": ["0000990274", "0011856542"],
+    "supporting_sections": [
+      {"document_id": "0000990274", "section": "Invoice Items"},
+      {"document_id": "0011856542", "section": "Order Details"}
+    ],
+    "document_relationship_type": "contradictory",
+    "information_synthesis_complexity": "medium",
+    "reasoning_path": [
+      "Locate the Steel Fasteners line item in the invoice (2,500 units)",
+      "Find the corresponding item in the purchase order (2,000 units)",
+      "Compare the quantities",
+      "Identify the discrepancy between the two documents"
+    ],
+    "section": "Invoice Items",
+    "context": "Invoice: Steel Fasteners (2,500 units) - $2.75 ea - $6,875.00\nPO: Steel Fasteners (2,000 units) - $2.75 ea - $5,500.00",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_doc_002",
+    "reference_question": "What is the total cost difference between this invoice and the previous month's invoice from the same supplier?",
+    "user_question": "What is the total cost difference between this March 1995 East Coast Supply Co. invoice and their February 1995 invoice to Westfield Manufacturing?",
+    "answer": "$1,528.63 increase",
+    "type": "numerical_reasoning",
+    "difficulty": "hard",
+    "supporting_documents": ["0000990274", "0001239897"],
+    "supporting_sections": [
+      {"document_id": "0000990274", "section": "Invoice Summary"},
+      {"document_id": "0001239897", "section": "Invoice Summary"}
+    ],
+    "document_relationship_type": "chronological",
+    "information_synthesis_complexity": "medium",
+    "reasoning_path": [
+      "Identify current invoice total ($12,457.89 from March 1995)",
+      "Identify previous invoice total ($10,929.26 from February 1995)",
+      "Calculate the difference ($12,457.89 - $10,929.26 = $1,528.63)",
+      "Determine this represents an increase"
+    ],
+    "section": "Invoice Summary",
+    "context": "March invoice total: $12,457.89\nFebruary invoice total: $10,929.26",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_doc_003",
+    "reference_question": "Based on this invoice and the company's financial policy document, is the purchase within the department's authorized spending limit?",
+    "user_question": "Based on the East Coast Supply Co. invoice and Westfield Manufacturing's financial policy document, is this purchase within the Industrial Department's authorized spending limit?",
+    "answer": "Yes, the invoice total of $12,457.89 is within the Industrial Department's monthly limit of $15,000",
+    "type": "verification",
+    "difficulty": "medium",
+    "supporting_documents": ["0000990274", "0001485288"],
+    "supporting_sections": [
+      {"document_id": "0000990274", "section": "Invoice Summary"},
+      {"document_id": "0001485288", "section": "Departmental Spending Limits"}
+    ],
+    "document_relationship_type": "prerequisite",
+    "information_synthesis_complexity": "low",
+    "reasoning_path": [
+      "Identify the invoice total ($12,457.89)",
+      "Determine which department this purchase belongs to (Industrial)",
+      "Check the spending limit for the Industrial Department ($15,000 per month)",
+      "Compare the invoice amount to the limit and determine it's within bounds"
+    ],
+    "section": "Invoice Summary",
+    "context": "Invoice total: $12,457.89\nFinancial Policy: Industrial Department monthly spending limit: $15,000",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  }
+] 

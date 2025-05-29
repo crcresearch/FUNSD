@@ -1,0 +1,270 @@
+[
+  {
+    "id": "qa_extraction_001",
+    "reference_question": "Who are the parties involved in this contract?",
+    "user_question": "Who are the parties involved in this service agreement contract dated January 10, 1998?",
+    "answer": "Global Technologies Inc. and Eastwood Consulting Services",
+    "type": "extraction",
+    "difficulty": "easy",
+    "supporting_documents": ["0001123541"],
+    "section": "Contract Parties",
+    "context": "THIS AGREEMENT is made this 10th day of January, 1998 between Global Technologies Inc., a Delaware corporation (\"Client\"), and Eastwood Consulting Services, a California corporation (\"Contractor\").",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_extraction_002",
+    "reference_question": "What is the effective date of the contract?",
+    "user_question": "What is the effective date of the service agreement between Global Technologies and Eastwood Consulting?",
+    "answer": "January 10, 1998",
+    "type": "extraction",
+    "difficulty": "easy",
+    "supporting_documents": ["0001123541"],
+    "section": "Contract Header",
+    "context": "THIS AGREEMENT is made this 10th day of January, 1998 between...",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_numerical_001",
+    "reference_question": "What is the hourly rate for consulting services?",
+    "user_question": "What is the hourly rate for consulting services in the Global Technologies and Eastwood Consulting agreement?",
+    "answer": "$125.00",
+    "type": "numerical_reasoning",
+    "difficulty": "easy",
+    "supporting_documents": ["0001123541"],
+    "section": "Compensation",
+    "context": "2.1 Client shall pay Contractor at the rate of $125.00 per hour for services performed pursuant to this Agreement.",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_numerical_002",
+    "reference_question": "What is the maximum amount payable under this contract?",
+    "user_question": "What is the maximum amount payable under the service agreement between Global Technologies and Eastwood Consulting?",
+    "answer": "$50,000.00",
+    "type": "numerical_reasoning",
+    "difficulty": "easy",
+    "supporting_documents": ["0001123541"],
+    "section": "Compensation",
+    "context": "2.3 In no event shall the total compensation paid under this Agreement exceed the sum of Fifty Thousand Dollars ($50,000.00) without prior written approval of Client.",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_temporal_001",
+    "reference_question": "What is the duration of the contract?",
+    "user_question": "What is the duration of the service agreement between Global Technologies and Eastwood Consulting?",
+    "answer": "12 months",
+    "type": "temporal_reasoning",
+    "difficulty": "easy",
+    "supporting_documents": ["0001123541"],
+    "section": "Term",
+    "context": "3.1 This Agreement shall commence on the Effective Date and shall continue for a period of twelve (12) months thereafter, unless sooner terminated as provided herein.",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_temporal_002",
+    "reference_question": "How many days' notice is required for termination without cause?",
+    "user_question": "According to the service agreement, how many days' notice is required for termination without cause?",
+    "answer": "30 days",
+    "type": "temporal_reasoning",
+    "difficulty": "medium",
+    "supporting_documents": ["0001123541"],
+    "section": "Termination",
+    "context": "3.2 Either party may terminate this Agreement without cause upon thirty (30) days' prior written notice to the other party.",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_relationship_001",
+    "reference_question": "What is the relationship between the Contractor and the Client?",
+    "user_question": "What is the relationship between Eastwood Consulting and Global Technologies as defined in their service agreement?",
+    "answer": "Independent contractor relationship, not employer-employee",
+    "type": "relationship",
+    "difficulty": "medium",
+    "supporting_documents": ["0001123541"],
+    "section": "Independent Contractor",
+    "context": "4.1 Contractor is an independent contractor and not an employee of Client. Nothing in this Agreement shall be construed as creating an employer-employee relationship.",
+    "requires_reasoning": false,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_verification_001",
+    "reference_question": "Does the contractor have the right to subcontract work?",
+    "user_question": "According to the service agreement, does Eastwood Consulting have the right to subcontract work to other parties?",
+    "answer": "No, the contractor may not subcontract without prior written consent",
+    "type": "verification",
+    "difficulty": "medium",
+    "supporting_documents": ["0001123541"],
+    "section": "Assignment",
+    "context": "7.1 Contractor shall not assign or subcontract any portion of its obligations under this Agreement without the prior written consent of Client.",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_hop_001",
+    "reference_question": "What happens to intellectual property created during the project?",
+    "user_question": "According to the Global Technologies and Eastwood Consulting agreement, what happens to intellectual property created during the project?",
+    "answer": "All intellectual property created becomes the sole and exclusive property of the Client",
+    "type": "multi_hop_reasoning",
+    "difficulty": "medium",
+    "supporting_documents": ["0001123541"],
+    "supporting_sections": [
+      {"document_id": "0001123541", "section": "Intellectual Property"}
+    ],
+    "reasoning_path": [
+      "Locate the intellectual property clause in the contract",
+      "Identify that the contractor assigns all rights to the client",
+      "Determine that this means all IP becomes the client's exclusive property"
+    ],
+    "section": "Intellectual Property",
+    "context": "5.1 All reports, information, data, work product, findings, and conclusions produced in connection with this Agreement (\"Work Product\") shall be the sole and exclusive property of Client.\n5.2 Contractor hereby assigns to Client all right, title, and interest in the Work Product, including all intellectual property rights therein.",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_comparative_001",
+    "reference_question": "Which party has greater liability protection under the agreement?",
+    "user_question": "Which party has greater liability protection under the service agreement between Global Technologies and Eastwood Consulting?",
+    "answer": "Global Technologies (Client) has greater liability protection due to the indemnification clause requiring Contractor to indemnify Client but not vice versa",
+    "type": "comparative_reasoning",
+    "difficulty": "hard",
+    "supporting_documents": ["0001123541"],
+    "reasoning_path": [
+      "Examine the liability provisions in the contract",
+      "Identify that the Contractor must indemnify the Client",
+      "Note there is no reciprocal obligation for Client to indemnify Contractor",
+      "Determine that this creates an imbalance favoring the Client's liability protection"
+    ],
+    "section": "Liability and Indemnification",
+    "context": "6.1 Contractor shall indemnify, defend, and hold harmless Client, its officers, directors, employees, and agents from and against any and all claims, liabilities, losses, damages, costs, and expenses, including reasonable attorneys' fees, arising out of or resulting from Contractor's performance under this Agreement.",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_counterfactual_001",
+    "reference_question": "If the contract had been signed on February 1, 1998 instead, when would it expire?",
+    "user_question": "If the service agreement between Global Technologies and Eastwood Consulting had been signed on February 1, 1998 instead of January 10, when would it expire?",
+    "answer": "January 31, 1999",
+    "type": "counterfactual_reasoning",
+    "difficulty": "medium",
+    "supporting_documents": ["0001123541"],
+    "reasoning_path": [
+      "Note the current effective date (January 10, 1998)",
+      "Identify the contract duration (12 months)",
+      "Consider the hypothetical start date (February 1, 1998)",
+      "Calculate when a 12-month period from February 1, 1998 would end (January 31, 1999)"
+    ],
+    "section": "Term",
+    "context": "3.1 This Agreement shall commence on the Effective Date and shall continue for a period of twelve (12) months thereafter, unless sooner terminated as provided herein.",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_visual_001",
+    "reference_question": "Are the signature blocks for both parties on the same page of the contract?",
+    "user_question": "In the service agreement between Global Technologies and Eastwood Consulting, are the signature blocks for both parties on the same page?",
+    "answer": "Yes, both signature blocks appear on the final page of the contract",
+    "type": "visual_reasoning",
+    "difficulty": "easy",
+    "supporting_documents": ["0001123541"],
+    "section": "Signature Blocks",
+    "context": "The document shows both signature blocks positioned side by side on the last page, with the Global Technologies signature block on the left and Eastwood Consulting on the right.",
+    "requires_reasoning": false,
+    "requires_image": true,
+    "visual_elements": ["signature blocks", "page layout", "document structure"],
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_doc_001",
+    "reference_question": "Is this agreement consistent with the client's standard contractual terms found in document 0001463282?",
+    "user_question": "Is the service agreement between Global Technologies and Eastwood Consulting consistent with Global Technologies' standard contractual terms found in their policy document?",
+    "answer": "No, the standard terms require a 60-day termination notice, but this agreement only requires 30 days",
+    "type": "verification",
+    "difficulty": "hard",
+    "supporting_documents": ["0001123541", "0001463282"],
+    "supporting_sections": [
+      {"document_id": "0001123541", "section": "Termination"},
+      {"document_id": "0001463282", "section": "Standard Terms"}
+    ],
+    "document_relationship_type": "contradictory",
+    "information_synthesis_complexity": "medium",
+    "reasoning_path": [
+      "Examine the termination clause in the current agreement (30 days' notice)",
+      "Check the standard terms document for termination requirements (60 days' notice)",
+      "Compare the two provisions",
+      "Identify the inconsistency between the documents"
+    ],
+    "section": "Termination",
+    "context": "Current agreement: 3.2 Either party may terminate this Agreement without cause upon thirty (30) days' prior written notice.\nStandard terms: 'All service agreements require sixty (60) days' written notice for termination without cause.'",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_doc_002",
+    "reference_question": "How does the hourly rate in this contract compare to the rate in the previous year's contract?",
+    "user_question": "How does the hourly rate in the 1998 service agreement between Global Technologies and Eastwood Consulting compare to their 1997 contract?",
+    "answer": "The hourly rate increased by $15, from $110 in the 1997 contract to $125 in the 1998 contract",
+    "type": "comparative_reasoning",
+    "difficulty": "medium",
+    "supporting_documents": ["0001123541", "0012529295"],
+    "supporting_sections": [
+      {"document_id": "0001123541", "section": "Compensation"},
+      {"document_id": "0012529295", "section": "Compensation"}
+    ],
+    "document_relationship_type": "chronological",
+    "information_synthesis_complexity": "low",
+    "reasoning_path": [
+      "Identify the current contract rate ($125 per hour)",
+      "Find the rate in the previous year's contract ($110 per hour)",
+      "Calculate the difference ($125 - $110 = $15)",
+      "Determine this represents an increase"
+    ],
+    "section": "Compensation",
+    "context": "1998 contract: 'Client shall pay Contractor at the rate of $125.00 per hour'\n1997 contract: 'Client shall pay Contractor at the rate of $110.00 per hour'",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  },
+  {
+    "id": "qa_multi_doc_003",
+    "reference_question": "Does this contract comply with the legal department's guidelines in document 0093726?",
+    "user_question": "Does the service agreement between Global Technologies and Eastwood Consulting comply with Global Technologies' legal department guidelines for consultant contracts?",
+    "answer": "No, the legal guidelines require a confidentiality period of at least 3 years post-termination, but this contract only specifies 2 years",
+    "type": "verification",
+    "difficulty": "hard",
+    "supporting_documents": ["0001123541", "00093726"],
+    "supporting_sections": [
+      {"document_id": "0001123541", "section": "Confidentiality"},
+      {"document_id": "00093726", "section": "Consultant Contract Guidelines"}
+    ],
+    "document_relationship_type": "prerequisite",
+    "information_synthesis_complexity": "high",
+    "reasoning_path": [
+      "Examine the confidentiality clause in the current agreement (2-year term post-termination)",
+      "Check the legal guidelines for confidentiality requirements (3-year minimum)",
+      "Compare the terms",
+      "Determine the contract does not comply with the guidelines"
+    ],
+    "section": "Confidentiality",
+    "context": "Current agreement: '8.2 Contractor's obligations under this Section shall survive for a period of two (2) years following the termination of this Agreement.'\nLegal guidelines: 'All consultant confidentiality obligations must extend for a minimum of three (3) years after contract termination.'",
+    "requires_reasoning": true,
+    "generation_method": "manual",
+    "verified": true
+  }
+] 

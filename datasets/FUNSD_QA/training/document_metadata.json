@@ -1,0 +1,352 @@
+[
+  {
+    "id": "0000971160",
+    "image_path": "datasets/FUNSD/training_data/images/0000971160.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000971160.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000971160.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0000989556",
+    "image_path": "datasets/FUNSD/training_data/images/0000989556.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000989556.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000989556.json",
+    "document_type": "Regulatory"
+  },
+  {
+    "id": "0000990274",
+    "image_path": "datasets/FUNSD/training_data/images/0000990274.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000990274.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000990274.json",
+    "document_type": "Financial"
+  },
+  {
+    "id": "0000999294",
+    "image_path": "datasets/FUNSD/training_data/images/0000999294.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000999294.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0000999294.json",
+    "document_type": "Transactional"
+  },
+  {
+    "id": "0001118259",
+    "image_path": "datasets/FUNSD/training_data/images/0001118259.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001118259.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001118259.json",
+    "document_type": "HR"
+  },
+  {
+    "id": "0001123541",
+    "image_path": "datasets/FUNSD/training_data/images/0001123541.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001123541.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001123541.json",
+    "document_type": "Contractual"
+  },
+  {
+    "id": "0001129658",
+    "image_path": "datasets/FUNSD/training_data/images/0001129658.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001129658.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001129658.json",
+    "document_type": "Correspondence"
+  },
+  {
+    "id": "0001209043",
+    "image_path": "datasets/FUNSD/training_data/images/0001209043.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001209043.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001209043.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0001239897",
+    "image_path": "datasets/FUNSD/training_data/images/0001239897.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001239897.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001239897.json",
+    "document_type": "Financial"
+  },
+  {
+    "id": "0001438955",
+    "image_path": "datasets/FUNSD/training_data/images/0001438955.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001438955.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001438955.json",
+    "document_type": "Transactional"
+  },
+  {
+    "id": "0001456787",
+    "image_path": "datasets/FUNSD/training_data/images/0001456787.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001456787.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001456787.json",
+    "document_type": "Regulatory"
+  },
+  {
+    "id": "0001463282",
+    "image_path": "datasets/FUNSD/training_data/images/0001463282.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001463282.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001463282.json",
+    "document_type": "Contractual"
+  },
+  {
+    "id": "0001463448",
+    "image_path": "datasets/FUNSD/training_data/images/0001463448.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001463448.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001463448.json",
+    "document_type": "HR"
+  },
+  {
+    "id": "0001476912",
+    "image_path": "datasets/FUNSD/training_data/images/0001476912.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001476912.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001476912.json",
+    "document_type": "Correspondence"
+  },
+  {
+    "id": "0001477983",
+    "image_path": "datasets/FUNSD/training_data/images/0001477983.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001477983.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001477983.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0001485288",
+    "image_path": "datasets/FUNSD/training_data/images/0001485288.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001485288.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0001485288.json",
+    "document_type": "Financial"
+  },
+  {
+    "id": "00040534",
+    "image_path": "datasets/FUNSD/training_data/images/00040534.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00040534.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00040534.json",
+    "document_type": "Transactional"
+  },
+  {
+    "id": "00070353",
+    "image_path": "datasets/FUNSD/training_data/images/00070353.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00070353.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00070353.json",
+    "document_type": "Regulatory"
+  },
+  {
+    "id": "00093726",
+    "image_path": "datasets/FUNSD/training_data/images/00093726.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00093726.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00093726.json",
+    "document_type": "Contractual"
+  },
+  {
+    "id": "0011505151",
+    "image_path": "datasets/FUNSD/training_data/images/0011505151.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011505151.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011505151.json",
+    "document_type": "HR"
+  },
+  {
+    "id": "0011838621",
+    "image_path": "datasets/FUNSD/training_data/images/0011838621.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011838621.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011838621.json",
+    "document_type": "Correspondence"
+  },
+  {
+    "id": "0011845203",
+    "image_path": "datasets/FUNSD/training_data/images/0011845203.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011845203.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011845203.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0011856542",
+    "image_path": "datasets/FUNSD/training_data/images/0011856542.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011856542.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011856542.json",
+    "document_type": "Financial"
+  },
+  {
+    "id": "0011859695",
+    "image_path": "datasets/FUNSD/training_data/images/0011859695.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011859695.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011859695.json",
+    "document_type": "Transactional"
+  },
+  {
+    "id": "0011899960",
+    "image_path": "datasets/FUNSD/training_data/images/0011899960.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011899960.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011899960.json",
+    "document_type": "Regulatory"
+  },
+  {
+    "id": "0011906503",
+    "image_path": "datasets/FUNSD/training_data/images/0011906503.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011906503.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011906503.json",
+    "document_type": "Contractual"
+  },
+  {
+    "id": "0011973451",
+    "image_path": "datasets/FUNSD/training_data/images/0011973451.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011973451.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011973451.json",
+    "document_type": "HR"
+  },
+  {
+    "id": "0011974919",
+    "image_path": "datasets/FUNSD/training_data/images/0011974919.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011974919.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011974919.json",
+    "document_type": "Correspondence"
+  },
+  {
+    "id": "0011976929",
+    "image_path": "datasets/FUNSD/training_data/images/0011976929.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011976929.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0011976929.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0012178355",
+    "image_path": "datasets/FUNSD/training_data/images/0012178355.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012178355.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012178355.json",
+    "document_type": "Financial"
+  },
+  {
+    "id": "0012199830",
+    "image_path": "datasets/FUNSD/training_data/images/0012199830.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012199830.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012199830.json",
+    "document_type": "Transactional"
+  },
+  {
+    "id": "0012529284",
+    "image_path": "datasets/FUNSD/training_data/images/0012529284.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012529284.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012529284.json",
+    "document_type": "Regulatory"
+  },
+  {
+    "id": "0012529295",
+    "image_path": "datasets/FUNSD/training_data/images/0012529295.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012529295.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012529295.json",
+    "document_type": "Contractual"
+  },
+  {
+    "id": "0012602424",
+    "image_path": "datasets/FUNSD/training_data/images/0012602424.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012602424.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012602424.json",
+    "document_type": "HR"
+  },
+  {
+    "id": "0012947358",
+    "image_path": "datasets/FUNSD/training_data/images/0012947358.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012947358.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0012947358.json",
+    "document_type": "Correspondence"
+  },
+  {
+    "id": "0013255595",
+    "image_path": "datasets/FUNSD/training_data/images/0013255595.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0013255595.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0013255595.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "00283813",
+    "image_path": "datasets/FUNSD/training_data/images/00283813.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00283813.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/00283813.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0030031163",
+    "image_path": "datasets/FUNSD/training_data/images/0030031163.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0030031163.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0030031163.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0030041455",
+    "image_path": "datasets/FUNSD/training_data/images/0030041455.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0030041455.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0030041455.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060000813",
+    "image_path": "datasets/FUNSD/training_data/images/0060000813.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060000813.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060000813.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060007216",
+    "image_path": "datasets/FUNSD/training_data/images/0060007216.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060007216.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060007216.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060024314",
+    "image_path": "datasets/FUNSD/training_data/images/0060024314.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060024314.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060024314.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060025670",
+    "image_path": "datasets/FUNSD/training_data/images/0060025670.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060025670.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060025670.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060029036",
+    "image_path": "datasets/FUNSD/training_data/images/0060029036.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060029036.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060029036.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060036622",
+    "image_path": "datasets/FUNSD/training_data/images/0060036622.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060036622.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060036622.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060068489",
+    "image_path": "datasets/FUNSD/training_data/images/0060068489.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060068489.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060068489.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060077689",
+    "image_path": "datasets/FUNSD/training_data/images/0060077689.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060077689.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060077689.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060080406",
+    "image_path": "datasets/FUNSD/training_data/images/0060080406.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060080406.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060080406.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060091229",
+    "image_path": "datasets/FUNSD/training_data/images/0060091229.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060091229.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060091229.json",
+    "document_type": "Administrative"
+  },
+  {
+    "id": "0060094595",
+    "image_path": "datasets/FUNSD/training_data/images/0060094595.png",
+    "markdown_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060094595.md",
+    "json_path": "datasets/FUNSD/training_data/anthropic__claude-3-7-sonnet-20250219_markdown/0060094595.json",
+    "document_type": "Administrative"
+  }
+] 
